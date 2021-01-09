@@ -1,0 +1,185 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(4, 4, 54);
+  color: #ffffff;
+  font-family: sans-serif;
+}
+
+header {
+  margin: 20px 0;
+  font-size: 10px;
+}
+
+.logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 20px 0;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  background-color: #2d212d;
+  padding: 40px;
+  border-radius: 10px;
+  /* background: url("images/LDEPGR.V1.png");
+  background-size: cover;
+  background-position: top; */
+}
+.bg-image {
+  width: 100%;
+  /* padding: 20px; */
+}
+.bg-image img {
+  width: 128%;
+  position: relative;
+  right: 41px;
+  bottom: 55px;
+}
+@media screen and (max-width: 425px) {
+  .bg-image img {
+    width: 299px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .bg-image img {
+    width: 265px;
+  }
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-container > h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #f2bd87;
+}
+.form-container > .warning {
+  font-size: 12px;
+  margin-bottom: 10px;
+  font-style: italic;
+  color: #f2bd87;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 20px;
+  height: 30px;
+  border: none;
+  outline: none;
+  padding-left: 30px;
+  font-size: 16px;
+}
+.username {
+  background-image: url("images/LDEPGR.V4.png");
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  background-position-x: 10px;
+  background-position-y: 5px;
+}
+.passcode {
+  background-image: url("images/LDEPGR.V3.png");
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  background-position-x: 10px;
+  background-position-y: 5px;
+}
+.captcha {
+  background-image: url("images/LDEPGR.V2.png");
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  background-position-x: 10px;
+  background-position-y: 5px;
+}
+.security {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+.security > p {
+  margin: 0 20px;
+  font-size: 14px;
+  padding: 5px;
+}
+.security > p:last-child {
+  background-color: #000000;
+  text-transform: uppercase;
+  color: aqua;
+}
+
+.security-field > span {
+  font-size: 12px;
+  position: relative;
+  bottom: 7px;
+  font-style: italic;
+  margin-left: 10px;
+}
+@media screen and (max-width: 425px) {
+  .security {
+    display: flex;
+    justify-content: space-between;
+  }
+  .security > p {
+    font-size: 12px;
+    padding: 4px;
+    margin: 0 5px;
+  }
+}
+.btn {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+.btn button {
+  background-color: aqua;
+  width: 50%;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+  color: #ffffff;
+  font-weight: bolder;
+  font-size: 16px;
+  cursor: pointer;
+}
+.other-details {
+  width: 105%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.other-details button {
+  background: none;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
