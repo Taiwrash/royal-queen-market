@@ -1,0 +1,17 @@
+.bg-image img {
+  width: 121%;
+}
+@media screen and (max-width: 425px) {
+  .bg-image img {
+    width: 299px;
+  }
+}
+
+@media screen and (max-width: 3755px) {
+  .bg-image img {
+    width: 265px;
+  }
+  .security-field > span {
+    font-size: 11px;
+  }
+}
