@@ -176,8 +176,12 @@ input {
   justify-content: space-between;
   margin-top: 30px;
 }
+.other-details a {
+  text-decoration: none;
+}
 
-.other-details button {
+.other-details button,
+.other-details a {
   background: none;
   color: #ffffff;
   border: none;
