@@ -31,35 +31,35 @@ main {
 }
 
 .container {
-  width: 70%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   background-color: #2d212d;
   padding: 40px;
   border-radius: 10px;
   /* background: url("images/LDEPGR.V1.png");
-  background-size: cover;
-  background-position: top; */
+    background-size: cover;
+    background-position: top; */
 }
 .bg-image {
-  width: 100%;
+  width: 97%;
   /* padding: 20px; */
 }
 .bg-image img {
-  width: 128%;
+  width: 123%;
   position: relative;
   right: 41px;
   bottom: 55px;
 }
 @media screen and (max-width: 425px) {
   .bg-image img {
-    width: 299px;
+    width: 340px;
   }
 }
 
 @media screen and (max-width: 375px) {
   .bg-image img {
-    width: 265px;
+    width: 320px;
   }
 }
 
@@ -85,10 +85,11 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-left: 80px;
 }
 
 input {
-  width: 100%;
+  width: 80%;
   margin: 10px 0;
   border-radius: 20px;
   height: 30px;
@@ -96,6 +97,26 @@ input {
   outline: none;
   padding-left: 30px;
   font-size: 16px;
+}
+
+@media screen and (max-width: 425px) {
+  form {
+    padding-left: 50px;
+  }
+  .security-field > input {
+    width: 100%;
+  }
+}
+.security-field {
+  width: 100%;
+}
+.security-field > input {
+  width: 80%;
+}
+@media screen and (max-width: 425px) {
+  .security-field > input {
+    width: 80%;
+  }
 }
 .username {
   background-image: url("images/LDEPGR.V4.png");
@@ -120,11 +141,15 @@ input {
 }
 .security {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 10px 0;
+  width: 80%;
+  position: relative;
+  right: 10%;
 }
 .security > p {
-  margin: 0 20px;
+  /* margin: 0 20px; */
+
   font-size: 14px;
   padding: 5px;
 }
@@ -132,6 +157,8 @@ input {
   background-color: #000000;
   text-transform: uppercase;
   color: aqua;
+  min-width: 100px;
+  text-align: center;
 }
 
 .security-field > span {
@@ -153,10 +180,12 @@ input {
   }
 }
 .btn {
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: center;
   margin: 10px 0;
+  padding: 0;
+  margin-right: 100px;
 }
 .btn button {
   background-color: aqua;
@@ -170,8 +199,14 @@ input {
   cursor: pointer;
 }
 
+@media screen and (max-width: 425px) {
+  .btn button {
+    padding: 0;
+    margin-left: 50px;
+  }
+}
 .other-details {
-  width: 105%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
@@ -187,6 +222,7 @@ input {
   border: none;
   outline: none;
   cursor: pointer;
+  font-size: 14px;
 }
 
 /* Sign up page  */
@@ -194,5 +230,21 @@ input {
 @media screen and (max-width: 375px) {
   .btn button {
     width: 70%;
+  }
+}
+
+.bg-image img {
+  width: 115.5%;
+  bottom: 60px;
+}
+@media screen and (max-width: 425px) {
+  .bg-image img {
+    width: 338px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .security-field > span {
+    font-size: 11px;
   }
 }
